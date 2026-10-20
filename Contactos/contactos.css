@@ -1,0 +1,162 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*En esta parte modificamos el color de las letras y el tipo de letras
+con el body*/
+body {
+font-family:'Courier New', Courier, monospace;
+color: black;
+}
+/*Aquí modificamos el ancho y maximo de ancho y centramos con el margin
+los div con clase contenedor*/
+.contenedor {
+width: 86%;
+max-width: 1100px;
+margin: auto;
+}
+/*Los a no llevan decoración*/
+a {
+text-decoration: none;
+}
+/*Cambiamos el ancho de la imagen y el tipo visualizacion*/
+img {
+max-width: 100%;
+display: block;
+}
+/*El area a mostrar de las class sección*/
+.seccion {
+padding: 25px 0;
+}
+/*Cambiamos el color, tamaño y el espacio del texto*/
+.etiqueta {
+color: white;
+font-size: 15px;
+letter-spacing: 3px;
+}
+/*Modificamos el titulo h2*/
+h2 {
+font-size: 27px;
+margin: 12px 0;
+}
+/*modificamos la manera de ver los botones*/
+.boton {
+display: inline-block;
+padding: 12px 18px;
+border-radius: 200px;
+font-size: 16px;
+text-align: center;
+cursor: pointer;
+}
+/*esto sirve para cuando pases el cursor por encima cambie de color*/
+.boton:hover {
+background: gray;
+}
+/* En estas clases personalizamos los colores de los diferentes botones
+*/
+.boton-principal {
+background: white;
+color: black;
+}
+
+.boton,
+.boton-principal,
+.boton-enviar{
+    background: #7D0404;
+}
+.boton-cabecera {
+background-color: white;
+}
+.boton-claro {
+color: white;
+border: 1px solid white;
+}
+.boton-secundario {
+background: #7D0404;
+color: white;
+width: 100%;
+}
+/*modificamos el encadezado y su contenido*/
+.encabezado {
+background: #7D0404;
+padding: 10px 0;
+}
+/* Acomodamos el logo y las opciones del menú para que queden en una
+misma fila */
+.encabezado-contenido {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+/* Definimos el tamaño del logo para que no se vea demasiado grande */
+.marca img {
+width: 100px;
+height: 100px;
+object-fit: contain;
+}
+/* Colocamos las opciones del menú una al lado de otra */
+.menu {
+display: flex;
+gap: 20px;
+list-style: none;
+}
+/* Personalizamos el color y el tamaño de las letras del menú */
+.menu a {
+color: white;
+font-size: 13px;
+}
+
+
+
+
+.pie-pagina {
+background: #7D0404;
+color: rgb(0, 0, 0);
+padding: 40px 0 20px;
+}
+.pie-grid {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 40px;
+padding-bottom: 30px;
+}
+.pie-grid h2 {
+font-size: 25px;
+}
+.pie-grid h3 {
+font-size: 14px;
+margin-bottom: 10px;
+}
+.pie-grid p,
+.pie-grid a {
+color: #000000;
+font-size: 12px;
+}
+.pie-grid ul {
+list-style: none;
+}
+
+
+
+
+.campo input,
+.campo select,
+.campo textarea {
+width: 100%;
+padding: 10px;
+border: 1px solid #7D0404;
+border-radius: 4px;
+font-family: Arial, sans-serif;
+background: white;
+}
+.aceptacion {
+display: block;
+font-size: 11px;
+margin-bottom: 15px;
+}
+.boton-enviar {
+width: 100%;
+border: none;
+}
+

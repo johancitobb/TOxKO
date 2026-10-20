@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOxKO Contactos</title>
+    <link rel="stylesheet" href="contactos.css">
+</head>
+<body>
+      <header class="encabezado" id="inicio">
+    <div class="contenedor encabezado-contenido">
+      <a class="marca" href="../index.html" aria-label="ToxKO, inicio">
+        <img src="../imagenes/Logos/TxK-Photoroom.png" alt="TOxKO" width="48" height="48">
+      </a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../productos/productos.html">Productos</a></li>
+          <li><a href="../sobre nosotros/sobren.html">Nosotros</a></li>
+        </ul>
+      </nav>
+      <a href="#contacto" class="boton boton-principal boton-cabecera">Cotizar ahora</a>
+    </div>
+  </header>
+
+  <section class="seccion contacto" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="contenedor contacto-grid">
+        <div class="contacto-texto">
+          <span class="etiqueta">Hablemos</span>
+          <h2 id="titulo-contacto">¿Tienes alguna duda o pedido especial?</h2>
+          <p>Déjanos tus datos si necesitas ayuda con las tallas, el catálogo de confección o la gestión de tu envío a nivel nacional.</p>
+          <p><strong>Dirección:</strong> Quito, Ecuador</p>
+          <p><strong>Horario:</strong> Lunes a sábado, 09:00 a 18:00</p>
+        </div>
+        <!-- Formulario visual: no requiere backend ni JavaScript en este examen -->
+        <form class="formulario" action="#contacto" method="get">
+          <div class="formulario-fila">
+            <div class="campo"><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required></div>
+            <div class="campo"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" placeholder="099 999 9999" required></div>
+          </div>
+          <div class="campo"><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" placeholder="correo@ejemplo.com" required></div>
+          <div class="campo"><label for="vehiculo">Prenda de interes</label><select id="vehiculo" name="vehiculo" required><option value="">Seleccione un modelo</option><option value="corolla">CATPUNK</option><option value="sportage">CATBALL</option><option value="mustang">BANG</option><option value="dmax">BOOOOOOOOOMMMMM</option></select></div>
+          <div class="campo"><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu consulta..."></textarea></div>
+          <label class="aceptacion"><input type="checkbox" name="privacidad" required> Acepto ser contactado para recibir información.</label>
+          <button class="boton boton-principal boton-enviar" type="submit">Enviar solicitud</button>
+        </form>
+      </div>
+    </section>
+
+   <footer class="pie-pagina">
+    <div class="contenedor pie-grid">
+      <div><h2>TOxKO</h2><p>Tu próximo look comienza aquí.</p></div>
+      <div><h3>Enlaces rápidos</h3><ul><li><a href="../index.html">Inicio</a></li><li><a href="../productos/productos.html">Catalogo</a></li><li><a href="../sobre nosotros/sobren.html">Nosotros</a></li></ul></div>
+      <div><h3>Síguenos</h3><ul><li><a href="https://www.instagram.com/to_x_ko/" target="_blank" rel="noopener noreferrer">Instagram</a></li><li><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">Whatsapp</a></li></ul></div>
+    </div>
+    <div class="contenedor pie-inferior"><p>&copy; 2026 TOxKO. Proyecto académico.</p></div>
+  </footer>
+</body>
+</html>

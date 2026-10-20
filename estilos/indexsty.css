@@ -1,0 +1,213 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*En esta parte modificamos el color de las letras y el tipo de letras
+con el body*/
+body {
+font-family:'Courier New', Courier, monospace;
+color: black;
+}
+/*Aquí modificamos el ancho y maximo de ancho y centramos con el margin
+los div con clase contenedor*/
+.contenedor {
+width: 86%;
+max-width: 1100px;
+margin: auto;
+}
+/*Los a no llevan decoración*/
+a {
+text-decoration: none;
+}
+/*Cambiamos el ancho de la imagen y el tipo visualizacion*/
+img {
+max-width: 100%;
+display: block;
+}
+/*El area a mostrar de las class sección*/
+.seccion {
+padding: 25px 0;
+}
+/*Cambiamos el color, tamaño y el espacio del texto*/
+.etiqueta {
+color: white;
+font-size: 15px;
+letter-spacing: 3px;
+}
+/*Modificamos el titulo h2*/
+h2 {
+font-size: 27px;
+margin: 12px 0;
+}
+/*modificamos la manera de ver los botones*/
+.boton {
+display: inline-block;
+padding: 12px 18px;
+border-radius: 200px;
+font-size: 16px;
+text-align: center;
+cursor: pointer;
+}
+/*esto sirve para cuando pases el cursor por encima cambie de color*/
+.boton:hover {
+background: gray;
+}
+/* En estas clases personalizamos los colores de los diferentes botones
+*/
+.boton-principal {
+background: white;
+color: black;
+}
+.boton-cabecera {
+background-color: white;
+}
+.boton-claro {
+color: white;
+border: 1px solid white;
+}
+.boton-secundario {
+background: #7D0404;
+color: white;
+width: 100%;
+}
+/*modificamos el encadezado y su contenido*/
+.encabezado {
+background: #7D0404;
+padding: 10px 0;
+}
+/* Acomodamos el logo y las opciones del menú para que queden en una
+misma fila */
+.encabezado-contenido {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+/* Definimos el tamaño del logo para que no se vea demasiado grande */
+.marca img {
+width: 100px;
+height: 100px;
+object-fit: contain;
+}
+/* Colocamos las opciones del menú una al lado de otra */
+.menu {
+display: flex;
+gap: 20px;
+list-style: none;
+}
+/* Personalizamos el color y el tamaño de las letras del menú */
+.menu a {
+color: white;
+font-size: 13px;
+}
+/* Esta es la parte principal de la página, donde colocamos el fondo
+rosado */
+.hero {
+background: #7D0404;
+color: white;
+padding: 50px 0;
+}
+/* Dividimos esta sección en dos partes para colocar el texto y la imagen
+*/
+.hero-contenido {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: center;
+}
+/* Modificamos el tamaño del título principal y el espacio que tiene
+alrededor */
+.hero-texto h1 {
+font-size: 40px;
+line-height: 1.2;
+margin: 10px 0 20px;
+}
+.hero-texto p {
+font-size: 13px;
+margin-bottom: 20px;
+}
+/* Colocamos los botones uno al lado del otro */
+.hero-acciones {
+display: flex;
+gap: 10px;
+}
+.hero-imagen img {
+width: 100%;
+height: 280px;
+object-fit: cover;
+border-radius: 10px;
+}
+.seccion-encabezado {
+text-align: center;
+margin-bottom: 30px;
+}
+.productos-grid {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 18px;
+}
+
+.pie-pagina {
+background: #7D0404;
+color: rgb(0, 0, 0);
+padding: 40px 0 20px;
+}
+.pie-grid {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 40px;
+padding-bottom: 30px;
+}
+.pie-grid h2 {
+font-size: 25px;
+}
+.pie-grid h3 {
+font-size: 14px;
+margin-bottom: 10px;
+}
+.pie-grid p,
+.pie-grid a {
+color: #000000;
+font-size: 12px;
+}
+.pie-grid ul {
+list-style: none;
+}
+.productos-card {
+border: 1px solid #FCD7FB;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 3px 10px #00000010;
+}
+.productos-card > img {
+width: 100%;
+height: 280px;
+object-fit: cover;
+}
+.productos-info {
+padding: 15px;
+}
+
+.productos-info h3 {
+font-size: 15px;
+margin: 5px 0;
+}
+.productos-precio {
+color: black;
+font-weight: bold;
+margin: 8px 0;
+}
+.productos-detalles {
+display: flex;
+flex-wrap: wrap;
+gap: 5px;
+list-style: none;
+margin: 12px 0;
+}
+/* Damos un fondo rosado a cada detalle para que se diferencie de la
+información */
+.productos-detalles li {
+background: #822A2A;
+padding: 4px;
+font-size: 10px;
+}
