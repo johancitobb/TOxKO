@@ -8,6 +8,9 @@ con el body*/
 body {
 font-family:'Courier New', Courier, monospace;
 color: black;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
 }
 /*Aquí modificamos el ancho y maximo de ancho y centramos con el margin
 los div con clase contenedor*/
@@ -63,7 +66,7 @@ color: black;
 .boton,
 .boton-principal,
 .boton-enviar{
-    background: #7D0404;
+    background: #de4c4c;
 }
 .boton-cabecera {
 background-color: white;
@@ -73,7 +76,7 @@ color: white;
 border: 1px solid white;
 }
 .boton-secundario {
-background: #7D0404;
+background: #de4c4c;
 color: white;
 width: 100%;
 }
@@ -159,4 +162,57 @@ margin-bottom: 15px;
 width: 100%;
 border: none;
 }
+
+main {
+    flex: 1;
+}
+
+/*Adaptación para moviles*/
+
+@media (max-width: 768px) {
+  
+  /* Header responsivo: apila el logo y el menú de navegación */
+  .encabezado-contenido {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* Distribución del Formulario: Pasa el texto y el formulario a una sola columna vertical */
+  .contacto-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  /* Fuerza a que los campos dobles compartidos (Nombre / Teléfono) se separen uno abajo del otro */
+  .formulario-fila {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  /* Ajusta los tamaños de fuente de las cajas de texto en celulares */
+  .campo input, .campo select, .campo textarea {
+    font-size: 14px;
+  }
+
+  /* Reorganiza las 3 columnas del Footer para que se apilen verticalmente */
+  .pie-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+  
+  .pie-grid ul {
+    padding: 0;
+  }
+}
+
 

@@ -8,6 +8,9 @@ con el body*/
 body {
 font-family:'Courier New', Courier, monospace;
 color: black;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
 }
 /*Aquí modificamos el ancho y maximo de ancho y centramos con el margin
 los div con clase contenedor*/
@@ -67,7 +70,7 @@ color: white;
 border: 1px solid white;
 }
 .boton-secundario {
-background: #7D0404;
+background: #de4c4c;
 color: white;
 width: 100%;
 }
@@ -102,7 +105,42 @@ font-size: 13px;
 }
 
 
-
+.hero {
+background: white;
+color: black;
+padding: 50px 0;
+}
+/* Dividimos esta sección en dos partes para colocar el texto y la imagen
+*/
+.hero-contenido {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 40px;
+align-items: center;
+}
+/* Modificamos el tamaño del título principal y el espacio que tiene
+alrededor */
+.hero-texto h1 {
+font-size: 40px;
+line-height: 1.2;
+margin: 10px 0 20px;
+}
+.hero-texto p {
+font-size: 13px;
+margin-bottom: 20px;
+}
+/* Colocamos los botones uno al lado del otro */
+.hero-acciones {
+display: flex;
+gap: 10px;
+}
+.hero-imagen img {
+width: 100%;
+height: 450px;
+aspect-ratio: 1 / 1;
+object-fit: cover;
+border-radius: 10px;
+}
 
 .pie-pagina {
 background: #7D0404;
@@ -129,4 +167,59 @@ font-size: 12px;
 }
 .pie-grid ul {
 list-style: none;
+}
+
+main {
+    flex: 1;
+}
+
+/*Adaptacion para celular*/
+
+@media (max-width: 768px) {
+  
+  /* 1. Header responsivo: apila verticalmente el logo, menú y botones */
+  .encabezado-contenido {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* 2. Sección Sobre Nosotros (Hero): Pasa de 2 columnas a 1 sola columna vertical */
+  .hero-contenido {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-texto h1 {
+    font-size: 30px; /* Tamaño de letra adaptado para pantallas pequeñas */
+  }
+
+  .hero-acciones {
+    justify-content: center; /* Centra los botones en el celular */
+  }
+
+  /* Reajuste de la proporción de la imagen en dispositivos móviles */
+  .hero-imagen img {
+    height: auto;
+    max-width: 350px;
+    margin: 0 auto; /* Centra la imagen debajo del texto */
+  }
+
+  /* 3. Footer responsivo: Alinea las listas una debajo de otra */
+  .pie-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+  
+  .pie-grid ul {
+    padding: 0;
+  }
 }

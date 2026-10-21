@@ -67,7 +67,7 @@ color: white;
 border: 1px solid white;
 }
 .boton-secundario {
-background: #7D0404;
+background: #de4c4c;
 color: white;
 width: 100%;
 }
@@ -101,202 +101,123 @@ color: white;
 font-size: 13px;
 }
 
-/* Estilo del título principal */
-.mis-productos {
-    font-weight: lighter;
-    text-align: center;
-    margin: 10px 0 30px 0;
-    color: red;
-}
-
-/* Contenedor principal que organiza los productos en 2 filas y 2 columnas */
-.row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center; 
-    align-items: start;     
-    column-gap: 30px;       
-    row-gap: 35px;          
-    padding: 20px;
-    max-width: 800px;    
-    margin: 0 auto;   
-}
-
-/* Tarjeta individual de cada producto */
-.product-box {
+.productos-encadezado {
     display: flex;
-    flex-direction: column;
-    align-items: center;    
-    text-align: center;    
-    width: 200px;
-    text-decoration: none; 
-    color: black;
-}
-
-/* Ajustes de la imagen */
-.product-box img {
-    width: 300px;
-    height: 250px;
-    display: block;
-    margin-bottom: 12px;    
-    border-radius: 4px;     
-}
-
-/* Bloque contenedor de la información del producto */
-.product-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    width: 100%;
-}
-
-/* Título del modelo de producto */
-.product-info h3 {
-    margin: 5px 0;
-    font-size: 1.1rem;
-}
-
-/* Estilo del precio */
-.product-info .price {
-    display: block;
-    margin: 4px 0;
-    font-size: 1rem;
-    color: #333;
-}
-/* Estilo del título principal */
-.mis-productos {
-    font-weight: lighter;
-    text-align: center;
-    margin: 20px 0 30px 0;
-    color: red;
-}
-
-
-/* Contenedor principal en cuadrícula */
-.row {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    justify-items: center; 
-    align-items: start;     
-    column-gap: 30px;       
-    row-gap: 35px;          
-    padding: 20px;
-    max-width: 850px;    
-    margin: 0 auto;   
-}
-
-/* Tarjeta individual de cada producto (Recuadro con sombreado) */
-.product-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    text-align: center;    
-    width: 280px;
-    background-color: #ffffff;
-    border: 1px solid #e0e0e0;
-    border-radius: 12px;
-    padding: 18px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombreado */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-sizing: border-box;
-}
-
-/* Efecto Hover en la tarjeta */
-.product-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Eleva el sombreado */
-}
-
-/* Enlace alrededor de la imagen */
-.product-link {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-}
-
-/* Ajustes de la imagen */
-.product-box img {
-    width: 100%;
-    max-width: 240px;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-    margin-bottom: 15px;    
-    border-radius: 8px;     
-}
-
-/* Bloque contenedor de la información del producto */
-.product-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-}
-
-/* Título del modelo de producto */
-.product-info h3 {
-    margin: 5px 0;
-    font-size: 1.15rem;
-    color: #222;
-}
-
-/* Estilo del precio */
-.product-info .price {
-    display: block;
-    margin: 6px 0 12px 0;
-    font-size: 1.1rem;
-    color: #e60000;
-    font-weight: bold;
-}
-
-/* Secciones de Opciones (Tallas y Colores) */
-.options-group {
-    width: 100%;
+    gap: 15px;
     margin-bottom: 12px;
+    width: 100%;
 }
 
-.option-label {
-    display: block;
-    font-size: 0.82rem;
-    color: #666;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+.productos-info {
+padding: 15px;
+display: block;
+text-align: 15px;
 }
 
-/* Botones de Tallas */
-.sizes {
-    display: flex;
-    justify-content: center;
-    gap: 6px;
+.productos-info h3 {
+font-size: 15px;
+margin: 5px 0;
+}
+.productos-precio {
+color: black;
+font-weight: bold;
+margin: 0;
+font-size: 1.2rem;
 }
 
-.size-btn {
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px 9px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    transition: all 0.2s ease;
+.productos-descripcion {
+color: black;
+font-weight: bold;
+margin: 8px 0;
 }
 
-.size-btn:hover {
-    border-color: #000;
-    background-color: #f0f0f0;
+.productos-color {
+color: black;
+font-weight: bold;
+margin: 8px 0;
 }
 
-.size-btn.active {
-    background-color: #000;
-    color: #fff;
-    border-color: #000;
+.productos-fit {
+color: black;
+font-weight: bold;
+margin: 8px 0;
+}
+
+.productos-material {
+color: black;
+font-weight: bold;
+margin: 8px 0;
+}
+.productos-durabilidad {
+color: black;
+font-weight: bold;
+margin: 8px 0;
+}
+/* Damos un fondo rosado a cada detalle para que se diferencie de la
+información */
+.productos-detalles {
+    margin: 0;
+    font-size: 1.1rem;
+    display: inline-block;
+    color: black;
+background: #ffbdbd;
+padding: 4px 12px;
+font-weight: bold;
+text-transform: uppercase;
+margin-bottom: 10px;
+}
+.productos-grid {
+display: grid;
+grid-template-columns: repeat(2,1fr);
+gap: 30px;
+max-width: 1000px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.productos-card {
+flex: 0 1 420px;
+max-width: 450px;
+background-color: white;
+border-radius: 8px;
+overflow: hidden;
+box-shadow: 0 4px 12px rgb(0, 0, 0, 0.08);
+}
+.productos-card > img {
+width: 100%;
+height: auto;
+display: block;
+object-fit: cover;
+}
+
+
+.pie-pagina {
+background: #7D0404;
+color: rgb(0, 0, 0);
+padding: 40px 0 20px;
+}
+.pie-grid {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr;
+gap: 40px;
+padding-bottom: 30px;
+}
+.pie-grid h2 {
+font-size: 25px;
+}
+.pie-grid h3 {
+font-size: 14px;
+margin-bottom: 10px;
+}
+.pie-grid p,
+.pie-grid a {
+color: #000000;
+font-size: 12px;
+}
+.pie-grid ul {
+list-style: none;
 }
 
 /* Botones de Colores */
@@ -334,29 +255,43 @@ font-size: 13px;
  text-decoration: line-through;
 }
 
-.pie-pagina {
-background: #7D0404;
-color: rgb(0, 0, 0);
-padding: 40px 0 20px;
-}
-.pie-grid {
-display: grid;
-grid-template-columns: 2fr 1fr 1fr;
-gap: 40px;
-padding-bottom: 30px;
-}
-.pie-grid h2 {
-font-size: 25px;
-}
-.pie-grid h3 {
-font-size: 14px;
-margin-bottom: 10px;
-}
-.pie-grid p,
-.pie-grid a {
-color: #000000;
-font-size: 12px;
-}
-.pie-grid ul {
-list-style: none;
+/*Adaptación para celular*/
+
+@media (max-width: 768px) {
+  
+  /* 1. Header responsivo: apila el logo y las opciones del menú */
+  .encabezado-contenido {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  /* 2. Cuadrícula de catálogo: Cambia de 2 columnas a 1 sola para celulares */
+  .productos-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    padding: 10px;
+  }
+
+  /* Permite que las tarjetas utilicen todo el ancho móvil sin compresión lateral */
+  .productos-card {
+    max-width: 100%;
+  }
+
+  /* 3. Reorganización de las columnas del Footer a disposición vertical */
+  .pie-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 25px;
+  }
+  
+  .pie-grid ul {
+    padding: 0;
+  }
 }
