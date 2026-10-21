@@ -195,7 +195,7 @@ object-fit: cover;
 
 .pie-pagina {
 background: #7D0404;
-color: rgb(0, 0, 0);
+color: white;
 padding: 40px 0 20px;
 }
 .pie-grid {
@@ -213,7 +213,7 @@ margin-bottom: 10px;
 }
 .pie-grid p,
 .pie-grid a {
-color: #000000;
+color: white;
 font-size: 12px;
 }
 .pie-grid ul {
